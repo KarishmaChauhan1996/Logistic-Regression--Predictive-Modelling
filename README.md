@@ -4,17 +4,17 @@ This repository contains a logistic regression model implemented for binary (or 
 
 **Table of Contents**
 
-Project Overview
-Dataset
-Dependencies
-Data Preprocessing
-Model Building
-Model Evaluation
-Insights and Interpretation
-How to Run
-Future Improvements
-Contributing
-License
+* Project Overview
+* Dataset
+* Dependencies
+* Data Preprocessing
+* Model Building
+* Model Evaluation
+* Insights and Interpretation
+* How to Run
+* Future Improvements
+* Contributing
+* License
 
 **Project Overview**
 
@@ -67,8 +67,7 @@ Model performance is evaluated using various metrics:
 * Accuracy: Proportion of correct predictions
 * Precision, Recall, F1-Score: Measures the quality of the model's classifications.
 * ROC Curve and AUC Score: Evaluate model's performance across different classification thresholds.
-* Confusion Matrix
-* A table showing true positiInsights and Interpretation
+* Confusion Matrix:  A table showing true positives, false positives, true negatives, and false negatives.
 
 **Insights and Interpretation**
 
