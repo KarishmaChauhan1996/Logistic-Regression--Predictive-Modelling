@@ -11,10 +11,6 @@ This repository contains a logistic regression model implemented for binary (or 
 * Model Building
 * Model Evaluation
 * Insights and Interpretation
-* How to Run
-* Future Improvements
-* Contributing
-* License
 
 **Project Overview**
 
@@ -52,27 +48,38 @@ seaborn
 Data preprocessing is essential to improve the model's performance and accuracy. Steps include:
 
 * Handling Missing Values: Filling or dropping missing values to ensure clean data.
-* Encoding Categorical Variables: Converting categorical features into numerical format using one-hot encoding or label encoding.
-* Feature Scaling: Normalizing or standardizing features to ensure they are on a similar scale (logistic regression performs better with standardized data).
-* Train-Test Split: Splitting the dataset into training and testing sets to evaluate model performance.
+* Handling duplicates.
+* Handling special charatcers.
+* Trating outliers.
+* Converting all objects to categorical codes
+* Encoding categorical variables.
+
+  **Exploratory Data Analysis**
+  
+* Checking correlation between variables using heatmap, pairplot.
+
 
 **Model Building**
 
-Import Logistic Regression Model: The logistic regression model from scikit-learn is used in this project.
+* Train-test solit.
+* Import Logistic Regression Model: The logistic regression model from scikit-learn is used in this project
+
+  **Predicting on Training and Test dataset**
+             -Getting the Predicted Classes and Probs
 
 **Model Evaluation**
 
 Model performance is evaluated using various metrics:
 
-* Accuracy: Proportion of correct predictions
-* Precision, Recall, F1-Score: Measures the quality of the model's classifications.
-* ROC Curve and AUC Score: Evaluate model's performance across different classification thresholds.
-* Confusion Matrix:  A table showing true positives, false positives, true negatives, and false negatives.
+* AUC and ROC for the training data and test data.
+* Confusion Matrix for the training data and test data:  A table showing true positives, false positives, true negatives, and false negatives
+
+**Applying GridSearchCV for Logistic Regression**
 
 **Insights and Interpretation**
 
-* The logistic regression model provides insights into the importance of features in predicting the target variable. Interpreting the coefficients of logistic regression helps understand the direction and magnitude of relationships between features and the target variable. For example:
-    -A positive coefficient indicates that an increase in that feature increases the likelihood of the positive class.
-    -A negative coefficient suggests that an increase in that feature decreases the likelihood of the positive classves, false positives, true negatives, and false negatives.
+* The logistic regression model provides insights into the importance of features in predicting the target variable. Interpreting the coefficients of logistic regression helps understand the direction and magnitude of relationships between features and the target variable.
+* Overall accuracy of the model – 82 % of total predictions are correct.
+* Accuracy, AUC, Precision and Recall for test data is almost inline with training data. This proves no overfitting or underfitting has happened, and overall the model is a good model for classification
 
 
